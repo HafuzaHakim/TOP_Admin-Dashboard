@@ -8,7 +8,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 20% 1fr;
+  grid-template-rows: min-content 1fr;
 }
 
 svg {
@@ -24,6 +24,10 @@ a:visited{
     color: rgba(240, 248, 255, 0.589);
 }
 
+img{
+    width: 100%;
+}
+
 /*
 ///////////////////////////////
 
@@ -36,8 +40,42 @@ header {
   background-color: white;
   box-shadow: 0px 2px 10px lightgray;
   position: relative;
+  padding: 1.5rem 3em;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
+header svg{
+    fill: black;
+}
+
+.top-info{
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem 3rem min-content;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+input{
+    height: min-content;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(211, 211, 211, 0.35);
+    margin-right: 15%;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(205, 202, 50, 0.75);
+    border-radius: 100%;
+    padding: 0.5rem;
+    aspect-ratio: 1;
+}
 /*
 ///////////////////////////////
 
@@ -76,11 +114,11 @@ aside {
 
 .sub-nav {
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
+  grid-template-columns: 2rem 1fr;
   gap: 1.5rem;
   font-size: 1.2rem;
   font-weight: 600;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .sub-nav > * {
