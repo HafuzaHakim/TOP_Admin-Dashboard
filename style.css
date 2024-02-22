@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 20% 1fr;
+}
+
+svg {
+  fill: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:visited{
+    color: rgba(240, 248, 255, 0.589);
+}
+
+/*
+///////////////////////////////
+
+------------HEADER-------------
+
+///////////////////////////////
+ */
+
+header {
+  background-color: white;
+  box-shadow: 0px 2px 10px lightgray;
+  position: relative;
+}
+
+/*
+///////////////////////////////
+
+------------SIDEBAR-------------
+
+///////////////////////////////
+ */
+
+aside {
+  background-color: rgb(206, 83, 67);
+  grid-row: 1/-1;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+  padding: 1.5rem;
+  gap: 4rem;
+  color: aliceblue;
+}
+
+.main-title {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+.main-title > * {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.sub-nav {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.sub-nav > * {
+  display: flex;
+  align-items: center;
+}
+
+.setting {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/*
+///////////////////////////////
+
+------------MAIN-------------
+
+///////////////////////////////
+ */
+
+main {
+  background-color: white;
+}
