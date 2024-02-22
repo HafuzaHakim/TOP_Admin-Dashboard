@@ -15,17 +15,17 @@ svg {
   fill: aliceblue;
 }
 
-a{
-    text-decoration: none;
-    color: aliceblue;
+a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
-a:visited{
-    color: rgba(240, 248, 255, 0.589);
+a:visited {
+  color: rgba(240, 248, 255, 0.589);
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
 /*
@@ -44,37 +44,45 @@ header {
 
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
 }
 
-header svg{
-    fill: black;
+header svg {
+  fill: black;
 }
 
-.top-info{
-    display: grid;
-    grid-template-columns: 2rem 1fr 2rem 3rem min-content;
-    gap: 1.5rem;
-    align-items: center;
+.top-info {
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem 3rem 15%;
+  gap: 1.5rem;
+  align-items: center;
 }
 
-input{
-    height: min-content;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 20px;
-    background-color: rgba(211, 211, 211, 0.35);
-    margin-right: 15%;
+input {
+  height: min-content;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(211, 211, 211, 0.35);
+  margin-right: 15%;
 }
 
-.img-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(205, 202, 50, 0.75);
-    border-radius: 100%;
-    padding: 0.5rem;
-    aspect-ratio: 1;
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(205, 202, 50, 0.75);
+  border-radius: 100%;
+  padding: 20%;
+  aspect-ratio: 1;
+}
+
+.bottom-info {
+  display: grid;
+  grid-template-columns: 6rem 1fr min-content min-content min-content;
+  gap: 1.5rem;
+  align-items: center;
 }
 /*
 ///////////////////////////////
@@ -130,6 +138,17 @@ aside {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 2rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(206, 83, 67);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 /*
